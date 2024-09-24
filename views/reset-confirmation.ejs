@@ -1,0 +1,20 @@
+<!-- views/reset-confirmation.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Password Reset Confirmation</title>
+  </head>
+  <body>
+    <h1>Password Reset Email Sent</h1>
+    <% if (emailSent) { %>
+    <p>An email with instructions to reset your password has been sent.</p>
+    <% } else { %>
+    <p>Sorry, there was an error sending the email. Please try again later.</p>
+    <% } %>
+  </body>
+</html>
